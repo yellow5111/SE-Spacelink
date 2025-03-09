@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_RadioAntennaDefinition">
+			<Id>
+				<TypeId>RadioAntenna</TypeId>
+				<SubtypeId>Spacelink_Dish_Small</SubtypeId>
+			</Id>
+			<DisplayName>Spacelink</DisplayName>
+			<Description>Spacelink is a new, revolutionary method for internet, communications, and more in the Almag--SE solar system...</Description>
+			<Icon>Textures\GUI\Icons\Cubes\Spacelink_Dish.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="3" z="3"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\Spacelink_Dish_Small.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="25" />
+				<Component Subtype="LargeTube" Count="1" />
+				<Component Subtype="SmallTube" Count="3" />
+				<Component Subtype="Construction" Count="10" />
+				<Component Subtype="Computer" Count="8" />
+				<Component Subtype="RadioCommunication" Count="5" />
+				<Component Subtype="SteelPlate" Count="5" />
+			</Components>
+			<CriticalComponent Subtype="RadioCommunication" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+			</MountPoints>
+			<BuildTimeSeconds>20</BuildTimeSeconds>
+			<DamageEffectName>Damage_Electrical_Damaged_Antenna</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\Spacelink_Dish_Small_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\Spacelink_Dish_Small_BS2.mwm"/>
+			</BuildProgressModels>
+			<!-- Beacon properties -->
+			<MaxBroadcastRadius>10000</MaxBroadcastRadius>
+			<MaxBroadcastPowerDrainkW>10</MaxBroadcastPowerDrainkW>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<BlockPairName>Spacelink_Dish</BlockPairName>
+			<ResourceSinkGroup>Utility</ResourceSinkGroup>
+			<PCU>5</PCU>
+			<IsAirTight>false</IsAirTight>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

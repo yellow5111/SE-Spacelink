@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlockVariantGroups>
+
+
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="AntennaGroup" />
+            <Icon>Textures\GUI\Icons\Cubes\antenna.dds</Icon>
+            <DisplayName>DisplayName_BlockGroup_AntennaGroup</DisplayName>
+            <Description>Description_BlockGroup_AntennaGroup</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_RadioAntenna" Subtype="LargeBlockRadioAntenna" />
+                <Block Type="MyObjectBuilder_RadioAntenna" Subtype="LargeBlockCompactRadioAntenna" />
+                <Block Type="MyObjectBuilder_RadioAntenna" Subtype="LargeBlockCompactRadioAntennaReskin" />
+                <Block Type="MyObjectBuilder_RadioAntenna" Subtype="SmallBlockCompactRadioAntennaReskin" />
+                <Block Type="MyObjectBuilder_RadioAntenna" Subtype="LargeBlockRadioAntennaDish" />
+                <Block Type="MyObjectBuilder_RadioAntenna" Subtype="SmallBlockRadioAntenna" />
+              <Block Type="MyObjectBuilder_RadioAntenna" Subtype="Spacelink_Dish" />
+              <Block Type="MyObjectBuilder_RadioAntenna" Subtype="Spacelink_Dish_Small" />
+                <Block Type="MyObjectBuilder_LaserAntenna" Subtype="LargeBlockLaserAntenna" />
+                <Block Type="MyObjectBuilder_LaserAntenna" Subtype="SmallBlockLaserAntenna" />
+            </Blocks>
+        </BlockVariantGroup>
+        
+    </BlockVariantGroups>
+</Definitions>
